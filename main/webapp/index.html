@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Form</title>
+</head>
+<body>
+
+<style>
+.container{
+width: 30%;
+border: 1px solid black;
+margin: auto;
+padding: 20px;
+font-size:20px;
+}
+
+#myform table tr td input{
+font-size: 20px;
+}
+</style>
+
+	<div class="container">
+	<h1>Login Here</h1>
+	<form action="RegisterServlet" method="post" id="myform">
+		<table cellspacing="7px" >
+			<tr>
+				<td><label for="name">Name</label> :</td>
+				<td><input type="text" name="name"
+					placeholder="Enter Name Here" id="name"></td>
+			</tr>
+			<tr>
+				<td><label for="mail">Email :</label></td>
+				<td><input type="email" name="email"
+					placeholder="Enter Email Here" id="mail"></td>
+			</tr>
+			<tr>
+				<td><label for="pass">Password :</label></td>
+				<td><input type="password" name="password"
+					placeholder="Enter Password Here" id="pass"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><label for="m">Male</label><input type="radio"
+					name="gender" id="m" value="Male" > &nbsp; &nbsp; <label for="f">Female</label>
+					<input type="radio" name="gender" id="f" value="Female"></td>
+			</tr>
+			<tr>
+				<td><label for="course">Course</label></td>
+				<td><select name="course" id="course">
+						<option value="Python">Python</option>
+						<option value="PHP">PHP</option>
+						<option value="Java">Java</option>
+						<option value="R">R</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td style="text-align: right;"><input type="checkbox" id="chk"
+					value="checked" name="condition"></td>
+				<td><label for="chk">I Agree Terms and Conditions</label></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Register"></td>
+				<td><input type="reset" value="reset"></td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>
