@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+//controller
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html; charset=utf-8");
