@@ -44,7 +44,7 @@ public class RegisterServlet extends HttpServlet {
 			// Use RequestDispatcher , using include() to show login page again with
 			// Unchecked error msg
 			RequestDispatcher rd = req.getRequestDispatcher("index.html");
-			rd.include(req, resp);
+			rd.include(req, resp); //using iclude dispatcher
 		}
 
 	}
